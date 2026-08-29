@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://rsi-exam.ai"><img src="https://img.shields.io/badge/Website-rsi--exam.ai-2c5f5d" alt="Website"></a>
-  <a href="https://huggingface.co/datasets/AIMING-Lab-UNC/RSI-Exam"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-RSI--Exam-ffcc4d" alt="HuggingFace"></a>
+  <a href="https://huggingface.co/datasets/RSI-Exam/RSI-Exam"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-RSI--Exam-ffcc4d" alt="HuggingFace"></a>
   <a href="https://discord.gg/FBzhepyE"><img src="https://img.shields.io/badge/Discord-join-5865F2?logo=discord&logoColor=white" alt="Discord"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License"></a>
   <a href="docs/wechat.md"><img src="https://img.shields.io/badge/WeChat-group-07C160?logo=wechat&logoColor=white" alt="WeChat"></a>
@@ -25,7 +25,7 @@ network policy and per-harness overlays that seal the run.
 
 **The tasks live on HuggingFace.** The 35 public ones, each with its complete grading
 container, are at
-[🤗 AIMING-Lab-UNC/RSI-Exam](https://huggingface.co/datasets/AIMING-Lab-UNC/RSI-Exam); the
+[🤗 RSI-Exam/RSI-Exam](https://huggingface.co/datasets/RSI-Exam/RSI-Exam); the
 remaining 53 are held back. Download them into `tasks/`, then pass a task directory to
 `harbor run`.
 
@@ -38,7 +38,7 @@ remaining 53 are held back. Download them into `tasks/`, then pass a task direct
 ## 🔥 News
 
 - **2026-08-28** — Data and code live: the public task set on
-  [🤗 AIMING-Lab-UNC/RSI-Exam](https://huggingface.co/datasets/AIMING-Lab-UNC/RSI-Exam),
+  [🤗 RSI-Exam/RSI-Exam](https://huggingface.co/datasets/RSI-Exam/RSI-Exam),
   and this evaluation infrastructure on GitHub.
 - **2026-08-26** — Website live: [rsi-exam.ai](https://rsi-exam.ai) — the 88-task leaderboard
   (Full / Public 35 / Private 53), per-domain task pages, the evaluation pipeline, three
@@ -83,7 +83,7 @@ uv tool install harbor
 **2 — Get the tasks**
 
 ```bash
-hf download AIMING-Lab-UNC/RSI-Exam --repo-type dataset --local-dir tasks/
+hf download RSI-Exam/RSI-Exam --repo-type dataset --local-dir tasks/
 ```
 
 **3 — Set task-side API keys, if the tasks you picked need them**
@@ -388,7 +388,7 @@ Per-split boards and per-task trajectories for all nine models are at
 ## 🔗 Related
 
 - **Website and leaderboard** — [rsi-exam.ai](https://rsi-exam.ai)
-- **Public tasks** — [🤗 AIMING-Lab-UNC/RSI-Exam](https://huggingface.co/datasets/AIMING-Lab-UNC/RSI-Exam)
+- **Public tasks** — [🤗 RSI-Exam/RSI-Exam](https://huggingface.co/datasets/RSI-Exam/RSI-Exam)
 - **Task pages** — [rsi-exam.ai/tasks.html](https://rsi-exam.ai/tasks.html), every task with its
   metric, its anchors, and the trajectories of nine models
 - **harbor** — [harborframework.com](https://www.harborframework.com/)
