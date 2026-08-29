@@ -13,6 +13,7 @@
   <a href="https://huggingface.co/datasets/AIMING-Lab-UNC/RSI-Exam"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-RSI--Exam-ffcc4d" alt="HuggingFace"></a>
   <a href="https://discord.gg/FBzhepyE"><img src="https://img.shields.io/badge/Discord-join-5865F2?logo=discord&logoColor=white" alt="Discord"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License"></a>
+  <a href="docs/wechat.md"><img src="https://img.shields.io/badge/WeChat-group-07C160?logo=wechat&logoColor=white" alt="WeChat"></a>
 </p>
 
 ---
