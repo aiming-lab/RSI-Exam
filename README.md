@@ -31,16 +31,8 @@ remaining 53 are held back. Download them into `tasks/`, then pass a task direct
 📮 **To evaluate on the full 88-task suite**, contact
 [contact@rsi-exam.ai](mailto:contact@rsi-exam.ai).
 
-💬 **To get involved**, join the discussion on [Discord](https://discord.gg/FBzhepyE), or our
-WeChat group.
-
-<details>
-<summary><b>WeChat group</b> — click to show the QR code</summary>
-<br>
-<p align="center">
-  <img src="assets/wechat-group.jpg" width="240" alt="WeChat group QR code">
-</p>
-</details>
+💬 **To get involved**, join the discussion on [Discord](https://discord.gg/FBzhepyE) or our
+[WeChat group](docs/wechat.md).
 
 ## 🔥 News
 
