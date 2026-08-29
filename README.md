@@ -11,6 +11,7 @@
 <p align="center">
   <a href="https://rsi-exam.ai"><img src="https://img.shields.io/badge/Website-rsi--exam.ai-2c5f5d" alt="Website"></a>
   <a href="https://huggingface.co/datasets/AIMING-Lab-UNC/RSI-Exam"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-RSI--Exam-ffcc4d" alt="HuggingFace"></a>
+  <a href="https://discord.gg/FBzhepyE"><img src="https://img.shields.io/badge/Discord-join-5865F2?logo=discord&logoColor=white" alt="Discord"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License"></a>
 </p>
 
@@ -29,6 +30,16 @@ remaining 53 are held back. Download them into `tasks/`, then pass a task direct
 
 📮 **To evaluate on the full 88-task suite**, contact
 [contact@rsi-exam.ai](mailto:contact@rsi-exam.ai).
+
+💬 **To get involved**, join the discussion on [Discord](https://discord.gg/FBzhepyE), or scan the
+QR code below to join our WeChat group.
+
+<details>
+<summary>WeChat group</summary>
+<p align="center">
+  <img src="assets/wechat-group.jpg" width="240" alt="WeChat group QR code">
+</p>
+</details>
 
 ## 🔥 News
 
@@ -394,5 +405,6 @@ MIT. See [LICENSE](LICENSE).
 
 ## 📮 Contact
 
-For questions, feedback, evaluation on the full 88-task suite, or contributions, please write to
+For questions, feedback, evaluation on the full 88-task suite, or contributions, join us on
+[Discord](https://discord.gg/FBzhepyE) or write to
 [contact@rsi-exam.ai](mailto:contact@rsi-exam.ai).
