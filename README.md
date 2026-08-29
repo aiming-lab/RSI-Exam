@@ -400,5 +400,5 @@ MIT. See [LICENSE](LICENSE).
 ## 📮 Contact
 
 For questions, feedback, evaluation on the full 88-task suite, or contributions, join us on
-[Discord](https://discord.gg/FBzhepyE) or write to
+[Discord](https://discord.gg/FBzhepyE) or in the [WeChat group](docs/wechat.md), or write to
 [contact@rsi-exam.ai](mailto:contact@rsi-exam.ai).
