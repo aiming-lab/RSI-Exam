@@ -31,8 +31,8 @@ remaining 53 are held back. Download them into `tasks/`, then pass a task direct
 📮 **To evaluate on the full 88-task suite**, contact
 [contact@rsi-exam.ai](mailto:contact@rsi-exam.ai).
 
-💬 **To get involved**, join the discussion on [Discord](https://discord.gg/FBzhepyE) or our
-[WeChat group](docs/wechat.md).
+📣 **Call for contributors.** Write a task from your own field, or review one. Join us on
+[Discord](https://discord.gg/FBzhepyE) or in the [WeChat group](docs/wechat.md).
 
 ## 🔥 News
 
