@@ -1,0 +1,9 @@
+# qwen-code has no harbor flag for its thinking level; the CLI reads it from
+# settings.json as `model.reasoningEffort` and validates it against the model's
+# own effort list. Workspace scope merges over the user-scope file the adapter
+# writes at install (which it only touches when MCP servers are configured).
+# Never declare networks/network_mode here: harbor would skip egress control for main.
+services:
+  main:
+    volumes:
+      - "${ARB_QWEN_SETTINGS}:/app/.qwen/settings.json:ro"

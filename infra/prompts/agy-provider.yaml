@@ -1,0 +1,9 @@
+# The OAuth token harbor seeds is not enough on its own: agy also needs the gcp
+# project and location that the sign-in wrote next to it, and harbor only writes
+# ~/.agy/antigravity-cli/settings.json (model config), a different file. Mount the
+# host's own settings so the two can never drift.
+# Never declare networks/network_mode here: harbor would skip egress control for main.
+services:
+  main:
+    volumes:
+      - "${ARB_AGY_SETTINGS}:/root/.gemini/antigravity-cli/settings.json:ro"

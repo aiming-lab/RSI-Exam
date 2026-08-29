@@ -1,0 +1,35 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+jobs/
+jobs_*/
+*.egg-info/
+.venv/
+rollout/
+showcase/.pdf-venv/
+results/
+showcase/
+todo-task/
+
+# tasks and figures live on the `task-repo` branch, not on main.
+# Kept on disk here for local work but untracked.
+/tasks/
+/figures/
+legacy/tasks/
+legacy/figures/
+
+# never commit OAuth credentials
+auth.json
+
+# never commit local secrets (API keys)
+.env
+.env.*
+!.env.local.example
+
+# SOTA solvers download standard torchvision/ImageNet inits at train time (network available in the
+# agent/oracle env); the no-network verifier loads the agent's saved model, not these. So do NOT
+# commit downloaded pretrained weights under solution/methods/**/weights/. The one non-torchvision
+# checkpoint (PANN Cnn14, under freesound .../sota/assets/) IS shipped via git-lfs and is not ignored.
+tasks/ai/mle/**/solution/methods/**/weights/
+tasks/ai/post/**/solution/methods/**/weights/

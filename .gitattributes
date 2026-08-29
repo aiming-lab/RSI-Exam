@@ -1,0 +1,9 @@
+# LFS-track all data files (env-side train data + sealed test-side held-out data) for the
+# application-domain scenarios that carry large data. Patterns scoped per top-level domain so
+# main's other tasks are untouched. Covers .tar.gz/.csv/.json/.jpg/etc. under any data/ dir.
+# (freesound also has a nested .gitattributes for its solution/methods/sota/assets/*.pth.)
+tasks/materials/**/data/** filter=lfs diff=lfs merge=lfs -text
+tasks/earth/**/data/** filter=lfs diff=lfs merge=lfs -text
+tasks/audio/**/data/** filter=lfs diff=lfs merge=lfs -text
+tasks/agri/**/data/** filter=lfs diff=lfs merge=lfs -text
+tasks/humanities/**/data/** filter=lfs diff=lfs merge=lfs -text

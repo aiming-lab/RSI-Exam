@@ -1,0 +1,16 @@
+# grok-build's OAuth login. harbor's adapter only knows XAI_API_KEY and builds a
+# closed env, so the subscription login has to arrive as a file instead: the CLI
+# prefers ~/.grok/auth.json over XAI_API_KEY (measured -- a placeholder key does
+# not disturb it), and refreshes the token itself, so rw is required.
+#
+# Only auth.json, never the whole ~/.grok: that directory also holds the host's
+# own `sessions/`, and harbor archives everything under it into the trial -- one
+# run shipped 672 KB of local grok conversations into the rollout. The CLI
+# rewrites auth.json in place (inode unchanged, measured), so a single-file bind
+# survives token refresh; flock on auth.json.lock serialises concurrent runs.
+# Container HOME is /root.
+# Never declare networks/network_mode here: harbor would skip egress control for main.
+services:
+  main:
+    volumes:
+      - "${ARB_GROK_AUTH:-${HOME}/.grok/auth.json}:/root/.grok/auth.json:rw"
