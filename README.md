@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://rsi-exam.ai"><img src="https://img.shields.io/badge/Website-rsi--exam.ai-2c5f5d" alt="Website"></a>
   <a href="https://huggingface.co/datasets/RSI-Exam/RSI-Exam"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-RSI--Exam-ffcc4d" alt="HuggingFace"></a>
-  <a href="https://discord.gg/FBzhepyE"><img src="https://img.shields.io/badge/Discord-join-5865F2?logo=discord&logoColor=white" alt="Discord"></a>
+  <a href="https://discord.gg/EfZHARpT7Z"><img src="https://img.shields.io/badge/Discord-join-5865F2?logo=discord&logoColor=white" alt="Discord"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License"></a>
   <a href="docs/wechat.md"><img src="https://img.shields.io/badge/WeChat-group-07C160?logo=wechat&logoColor=white" alt="WeChat"></a>
 </p>
@@ -35,7 +35,7 @@ remaining 53 are held back. Download them into `tasks/`, then pass a task direct
 📣 **Call for contributors.** Write a task from your own field, or review one. Full details,
 timelines and the contribution form are at
 [rsi-exam.ai/contribute.html](https://rsi-exam.ai/contribute.html); join us on
-[Discord](https://discord.gg/FBzhepyE) or in the [WeChat group](docs/wechat.md).
+[Discord](https://discord.gg/EfZHARpT7Z) or in the [WeChat group](docs/wechat.md).
 
 ## 🔥 News
 
@@ -405,4 +405,4 @@ MIT. See [LICENSE](LICENSE).
 [contact@rsi-exam.ai](mailto:contact@rsi-exam.ai).
 
 **For everything else** — questions, feedback, contributions — join us on
-[Discord](https://discord.gg/FBzhepyE) or in the [WeChat group](docs/wechat.md).
+[Discord](https://discord.gg/EfZHARpT7Z) or in the [WeChat group](docs/wechat.md).
