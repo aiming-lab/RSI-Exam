@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://rsi-exam.ai"><img src="https://img.shields.io/badge/Website-rsi--exam.ai-2c5f5d" alt="Website"></a>
   <a href="https://huggingface.co/datasets/RSI-Exam/RSI-Exam"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-RSI--Exam-ffcc4d" alt="HuggingFace"></a>
-  <a href="https://discord.gg/EfZHARpT7Z"><img src="https://img.shields.io/badge/Discord-join-5865F2?logo=discord&logoColor=white" alt="Discord"></a>
+  <a href="https://discord.gg/V2ZgHjep"><img src="https://img.shields.io/badge/Discord-join-5865F2?logo=discord&logoColor=white" alt="Discord"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License"></a>
   <a href="docs/wechat.md"><img src="https://img.shields.io/badge/WeChat-group-07C160?logo=wechat&logoColor=white" alt="WeChat"></a>
 </p>
