@@ -67,6 +67,16 @@ def started_at() -> dt.datetime | None:
                         return dt.datetime.fromisoformat(ts.replace("Z", "+00:00"))
                 except Exception:
                     break
+    # grok uses "ts" rather than "timestamp" in its session event log. Scan
+    # for the first valid event so a partial or malformed first line does not
+    # make the wall-time reminder fall back to the actively written tee log.
+    for line in _lines("~/.grok/sessions/*/*/events.jsonl"):
+        try:
+            ts = json.loads(line).get("ts")
+            if ts:
+                return dt.datetime.fromisoformat(ts.replace("Z", "+00:00"))
+        except Exception:
+            continue
     # Every harness gets its stdout teed here when the agent phase starts.
     stamps = [os.path.getmtime(f) for f in glob.glob("/logs/agent/*.txt")]
     if stamps:
@@ -158,6 +168,33 @@ def kimi() -> int | None:
             total, pending = total + pending, 0
     return (total + pending) or None
 
+
+def grok() -> int | None:
+    """Sum per-call output usage from grok-build's streaming JSON log."""
+    total = 0
+    for line in _lines("/logs/agent/grok-build.txt"):
+        if '"usage"' not in line:
+            continue
+        try:
+            event = json.loads(line)
+        except Exception:
+            continue
+        if not isinstance(event, dict) or event.get("type") != "usage":
+            continue
+        usage = event.get("usage")
+        if not isinstance(usage, dict):
+            continue
+        output_tokens = usage.get("output_tokens")
+        if (
+            not isinstance(output_tokens, int)
+            or isinstance(output_tokens, bool)
+            or output_tokens < 0
+        ):
+            continue
+        total += output_tokens
+    return total or None
+
+
 def _fire(state: str, marks, pct: float):
     reached = [c for c in marks if pct >= c]
     if not reached:
@@ -173,7 +210,7 @@ def _fire(state: str, marks, pct: float):
     return mark
 
 
-READERS = (codex, claude, gemini, qwen, kimi)
+READERS = (codex, claude, gemini, qwen, kimi, grok)
 
 
 def main() -> None:
