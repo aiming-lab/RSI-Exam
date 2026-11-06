@@ -395,6 +395,19 @@ Per-split boards and per-task trajectories for all nine models are at
   metric, its anchors, and the trajectories of nine models
 - **harbor** — [harborframework.com](https://www.harborframework.com/)
 
+## 📝 Citation
+
+If you use RSI-Exam in your research, please cite:
+
+```bibtex
+@misc{rsi-exam-2026,
+  title        = {RSI-Exam: Benchmarking Recursive Self-Improvement through Executable Research},
+  author       = {{RSI-Exam Team}},
+  year         = {2026},
+  howpublished = {\url{https://github.com/aiming-lab/RSI-Exam}}
+}
+```
+
 ## 📄 License
 
 MIT. See [LICENSE](LICENSE).
