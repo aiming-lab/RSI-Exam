@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use RSI-Exam in your research, please cite it as below."
+title: "RSI-Exam: Benchmarking Recursive Self-Improvement through Executable Research"
+type: software
+authors:
+  - name: "RSI-Exam Team"
+repository-code: "https://github.com/aiming-lab/RSI-Exam"
+url: "https://rsi-exam.ai"
+license: MIT
